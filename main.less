@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html { scroll-behavior: smooth; }
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body, a  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+html {
+    font-size: 16px;
+}
+*:focus {
+    outline: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+h1, .h1 {
+    font-size: 2.5rem;
+}
+h2, .h2 {
+    font-size: 2rem;
+}
+h3, .h3 {
+    font-size: 1.75rem;
+}
+h4, .h4 {
+    font-size: 1.5rem;
+}
+h5, .h5 {
+    font-size: 1.25rem;
+}
+h6, .h6 {
+    font-size: .8rem;
+}
+header {
+    section {
+        #month-calendar {
+            width: 340px;
+            height: 368px;
+            .month {
+                padding: 32px 0 0;
+                display: flex;
+                justify-content: space-around;
+                width: 94%;
+                a {
+                    font-size: 19px;
+                    font-weight: 900;
+                    margin-left: 8px;
+                }
+                .prev {
+                    cursor: pointer;
+                    img {
+                        transform: rotateY(175deg);
+                    }
+                }
+                .month__year {
+                    display: flex;
+                }
+                .next {
+                    cursor: pointer;
+                }
+                .month-name {
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: 'Montserrat', sans-serif;
+
+                }
+                .year-name {
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: 'Montserrat', sans-serif;
+                    margin: 0 8px;
+                }
+            }
+
+            .weekdays {
+                margin: 9px 16px -2px 42px;
+                padding: 36px 0;
+                background-color: #fff;
+                display: flex;
+                cursor: pointer;
+            }
+
+            .weekdays li {
+                flex: 0 0 calc(86% / 6);
+                font-size: 13px;
+                font-weight: bold;
+                color: #bc9cff;
+                cursor: pointer;
+            }
+
+            .days {
+                width: 84%;
+                height: 199px;
+                cursor: pointer;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-auto-rows: minmax(40px, auto);
+                margin-top: -10px;
+                margin-left: 16px;
+            }
+
+            .days li {
+                text-align: right;
+                color: #b9b9c3;
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}
